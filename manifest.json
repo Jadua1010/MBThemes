@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+
+  "name": "MBThemes",
+  "version": "0.1.0",
+  "description": "A managebac dark theme for a more pleasant experience",
+
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["content.js"],
+	
+    "matches": ["https://*.managebac.com/*"]
+  }]
+
+}

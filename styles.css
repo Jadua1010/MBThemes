@@ -1,0 +1,395 @@
+.theme-dark_blue, .theme-white {
+    --f-primary-color: linear-gradient(65deg, #0270D7 0, #0F8AFD 100%) !important; 
+    --f-primary-color-hover: #175cd3 !important;
+    --f-primary-color-active: #175cd3 !important;
+    --f-light-color: #5cb0ff !important;
+    --f-text-color: #fff !important;
+    --f-light-bg: #262A33 !important;
+    --f-light-bg-hover: #262A33 !important;
+}
+body {
+    color: #eff8ff !important;
+    background-color: #15181d !important;
+}
+
+a, .fr-view.fr-element {
+    color: #eff8ff !important;
+}
+
+.f-menu-nav, .navbar-default, .navbar .container-fluid, .f-menu-narrow .f-menu-submenu{
+    background-color: #1d2026 !important;
+	border: solid 0px #e7e7e7 !important;
+}
+
+.global-search .global-search-modal.active, .reference-guides, .rnav-base-widget, .sidebar-items-list, .sidebar-box-item, .sidebar-items-list .list-item:nth-child(even), .sidebar-box-item .list-item:nth-child(even) {
+    background-color: #333943 !important;
+	border: solid 0px #e7e7e7 !important;
+}
+
+.members-body, .members-head, .homeroom-attendance-component, .class-attendance-component {
+    background-color: #333943 !important;
+	border: solid 0px #e7e7e7 !important;
+	color: #fff !important;
+}
+
+.f-menu {
+	--f-menu-link-bg: #1d2026 !important;
+}
+
+.f-menu-link {
+    color: #fff !important;
+}
+
+.f-menu-expanded .f-menu-item.opened .f-menu-nav-link:hover {
+	color: #3582fd !important;
+	transition: 0.2s;
+}
+
+.f-menu-submenu-link.active .f-menu-submenu-link-title:hover {
+	color: #3582fd !important;
+	transition: 0.2s;
+}
+
+.f-menu-expanded .f-menu-nav-link.active{
+	color: #3582fd !important;
+	transition: 0.2s;
+}
+
+.f-menu-link:hover, .f-menu-submenu-link:hover, div .f-menu-submenu-link-title:hover {
+    color: #2f2f39 !important;
+	transition: 0.2s;
+}
+
+.f-menu-narrow .f-menu-item .f-menu-nav-link:hover {
+    --f-menu-link-bg: #15181d !important;
+}
+
+div .f-menu-submenu-link-title {
+	color: #fff !important;
+}
+
+.f-menu-submenu-link-title {
+    color: #475467!important;
+}
+
+.navbar .navbar-header .school-name, .navbar .navbar-header .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar .fi:not(.preserve-icon-color) path {
+    fill: #ffffff !important;
+}
+
+
+main .content-wrapper .content-block, .fusion-card-list .fusion-card-item .fusion-card-item {
+    background-color: #1d2026 !important;
+}
+
+h3 a, .h3 a, .pbl:not(.project-section) .pbl-header a, h4 a, .h4 a, .pbl:not(.project-section) .pbl-subheader a, h5 a, .h5 a, .title a, .student-name a, .student-switch-tile button {
+    color: #ffffff !important;
+}
+
+.fusion-card-header, .fusion-card-item, .fusion-card {
+    border: 1px solid #333d4d !important;
+}
+
+.two-weeks-calendar tbody td.day {
+    border: 0px solid #333d4d !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd), .table-fusion>tbody>tr:nth-of-type(odd) {
+    background-color: #23272e !important;
+	transition: 0.2s !important;
+}
+
+.table-hover>tbody>tr:hover, .table-fusion>tbody>tr:hover {
+    background-color: #292e36 !important;
+	transition: 0.2s !important;
+}
+
+.two-weeks-calendar tbody td.day.today {
+    background-color: #2e343d !important;
+}
+
+.assignment-row .assessment, .short-assignment .assessment {
+    background-color: #fff0 !important;
+	border-left: 1px solid #333d4d !important;
+}
+
+.btn-light, .btn-secondary {
+    color: #eff8ff !important;
+    background-color: #fff0 !important;
+    border-color: #333d4d !important;
+}
+div .btn:hover, .btn-light:hover, .btn-secondary:hover, .btn-light.active:hover, .btn-secondary.active:hover, .pill:hover, .grid-nav-tile .btn:hover {
+   background-color: #3c444d !important;
+   transition: 0.2s;
+}
+
+div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus {
+    background-color: #343b43 !important;
+}
+
+.popover, .popover-content .popover-actions {
+    background-color: #2f2f39 !important;
+	animation: fade ease 0.2s;
+}
+
+.date-badge .day {
+    border: 0px solid #a6bedc !important;
+    background-color: #fc5255 !important;
+}
+
+.ib-class-component .class-dropdown-item, .sebo-container, .academics-icon-container {
+    border: 0px solid #d0d5dd !important;
+	animation: fade ease 0.5s;
+}
+
+.ib-class-component .class-dropdown-item .text, .show-more .in, .fix-body-margins .redactor-styles .fr-view .fr-element, .redactor-styles *, .redactor-styles *:before, .redactor-styles *:after {
+    color: #b5c6e9 !important;
+	animation: fade ease 0.5s;
+}
+
+.show-more.active.active::after, .show-more.small-active.active::after {
+    -webkit-box-shadow: 0 0 0 #fff inset !important;
+    box-shadow: 0 0 0 #fff inset !important;
+}
+
+main .sidebar section .section-title, .activity-tile .description, .activity-tile .cas-activity-calendar {
+    color: #408dff !important;
+}
+
+.static {
+	filter: saturate(80%);
+}
+
+.content-navigation  {
+    background-color: #3c434f !important;
+}
+
+.main-tabs>li>a, .main-tabs>li>button {
+    background-color: #23272e !important;
+    border: 0px solid #d0d5dd !important;
+    border-radius: 10px !important;
+	color: var(--text-color) !important;
+}
+
+.main-tabs>li>a:hover, .main-tabs>li>button:hover {
+    background-color: #333842 !important;
+	transition: 0.2s;
+	color: #101828;
+}
+
+.stream-wrapper, .grid-nav-tile, .fusion-content-panel, .stream-plans {
+    background-color: rgb(0 0 0 / 0%) !important;
+}
+
+.content-covered {
+    background-color: #1e2025 !important;
+}
+
+.btn-link, .btn-link:hover {
+    color: #ffffff !important;
+}
+
+.dropdown-menu {
+    background-color: #23272e !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-menu {
+	animation: bounce-in ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.select2-container--bootstrap .select2-selection {
+    background-color: #333943 !important;
+    border-radius: 10px !important;
+	border: 0px solid #d0d5dd !important;
+}
+.select2-container--bootstrap .select2-selection--single .select2-selection__rendered {
+    color: #fff !important;
+}
+
+.select2-container--bootstrap .select2-dropdown {
+    background-color: #333943 !important;
+	animation: bounce-in ease 0.5s;
+}
+
+.two-weeks-calendar tbody td.day {
+	animation: fade ease 0.5s;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
+
+.blank-slate-container:not(.white-bg)::before {
+    filter: invert(1) brightness(200%) hue-rotate(185deg) contrast(80%) !important;
+}
+
+label {
+    color: #9dbeff !important;
+}
+
+.progress {
+    background-color: #141414 !important;
+    border-radius: 6px !important;
+}
+
+.pbl.pbl-worksheet:not(.project-section) .pbl-worksheet-header {
+    height: 120px !important;
+    border-radius: 10px !important;
+}
+
+.home-page-customisation .fusion-card-item-with-widgets .widget-tile, .calendar-tile, .current-day, .members-wrapper.multi-item-carousel .member, .menu-tiles .item-row, .classes-list .item-row, .calendar-widget .events-list {
+    border: 1px solid #1d2026 !important;
+    border-color: #1d2026 !important;
+    background-color: #1d2026 !important;
+    border-radius: 10px !important;
+}
+
+.events-list .event-tile *, .calendar-widget .current-date .day {
+	color: #fff !important;
+}
+
+.carousel-inline-section .multi-item-carousel .item {
+	color: #15181d !important;
+}
+
+.timetable-wrapper #timetable thead, .timetable-wrapper #timetable tbody>tr>td:first-child {
+	background-color: #15181d !important;
+    color: #fff !important;
+    border: 0px solid #d0d5dd !important;
+}
+
+.timetable-wrapper #timetable .class-wrapper:not(.custom) {
+    background-color: #121317 !important;
+}
+
+.timetable-wrapper #timetable thead th {
+	background-color: rgb(39 45 61 / 80%) !important;
+}
+
+.timetable-wrapper #timetable tbody>tr>td {
+    border: 0px solid #d0d5dd !important;
+}
+
+.projects-wrapper .project-section, .projects-wrapper .project-content, .project-section .blank-slate-wrapper, .projects-wrapper .project-section .project-actions, .double-divider {
+    background-color: #22252c !important;
+	border: 0px solid #d9e7f7 !important;
+}
+
+.core-task-show .core-task-details {
+    border: 0px solid #d0d5dd !important;
+}
+
+.osc-study-banner, .homepage .sections-wrapper.subjects-page .subject-image-container .details, .homepage .sections-wrapper.subjects-page .subject-image-container .fusion-section-content, .events-calendar-container .events-month .fusion-card, .subjects-page .fusion-cell-group .fusion-cell-group-item, .subjects-page .fusion-tiles-item.item {
+    background-color: #080808 !important;
+	border: 0px solid #d0d5dd !important;
+}
+
+.homepage .sections-wrapper.subjects-page .subjects-list-container .fusion-tiles h4, .homepage .sections-wrapper.subjects-page .subjects-list-container .fusion-tiles h5 {
+    color: #ffffff !important;
+}
+
+/* CSS for the overlay container */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000; /* Ensure it's on top of other content */
+    opacity: 0; /* Initially invisible */
+    pointer-events: all; /* Allows interaction with content behind the overlay */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* CSS for the logo image with the hithere animation */
+.logo {
+	position: absolute; /* Change the positioning to absolute */
+	left: 38%; /* Adjust the width as needed relative to viewport width */
+	top: 10vw;
+    transform: translate(-50%, -50%); /* Translate back by half of its own width and height */
+    animation: hithere 1s ease 2; /* Play 'hithere' once and 'bounce-out' once after a 3-second delay */
+}
+
+.animate-bounce-out {
+    animation: bounce-out 1s ease forwards;
+}
+
+@keyframes fadeBackground {
+    0% { background-color: rgba(0, 0, 0, 0.7); }
+    100% { background-color: rgba(0, 0, 0, 0); }
+}
+
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
+}
+
+/* CSS for the fade-in animation */
+.overlay.show {
+    opacity: 1; /* Fully visible */
+    pointer-events: auto; /* Allows interaction with the overlay */
+	animation: fadeBackground 0.3s ease 1.5s forwards;
+}
+
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+main .content-wrapper .content-block .content-block-header h3 {
+	color: aliceblue;
+}
+
+main .content-wrapper.login-wrapper .content-block .form-actions {
+    background: rgb(0 0 0 / 0%) !important;
+    border-top: 0px !important;
+}
+
+.sidebar .list-group.pamoja-online-courses .list-group-item:not(:nth-of-type(2)), .form-actions, main .content-wrapper .content-block .content-panel {
+    background-color: #3c434f !important;
+	border: 0px !important;
+}
+
+.fr-box .fr-toolbar, .fr-box.fr-basic.fr-top .fr-wrapper {
+    border: 0px !important;
+    background-color: #3c434f !important;
+}
+
+.pbl:not(.project-section) .subsection {
+    border: 0px solid #d9e7f7 !important;
+}
