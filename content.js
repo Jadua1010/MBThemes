@@ -6,7 +6,7 @@ if (!link) {
 }
 link.href = 'https://drive.jaduastudios.com/images/webdata/mb2.ico';
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', function () {
     // Create a container for the logo overlay
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
@@ -35,4 +35,4 @@ window.onload = function () {
     });
     overlay.classList.add('show');
     }, 0); // Show after 1 second
-};
+});
