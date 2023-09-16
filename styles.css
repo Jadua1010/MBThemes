@@ -32,6 +32,14 @@ a, .fr-view.fr-element {
 	color: #fff !important;
 }
 
+.f-menu-narrow .f-menu-item.opened .f-menu-nav-link, .f-menu-narrow .f-menu-item:hover .f-menu-nav-link {
+    --f-menu-link-bg: #1570ef !important;
+}
+
+.f-menu-narrow .f-menu-link.active:hover, .f-menu-narrow .f-menu-link:focus {
+	background-color: #fff !important;
+}
+
 .f-menu {
 	--f-menu-link-bg: #1d2026 !important;
 }
@@ -80,6 +88,10 @@ div .f-menu-submenu-link-title {
     fill: #ffffff !important;
 }
 
+.form-section .section-full-width {
+    border-top: 0px solid #4d5e73 !important;
+	background-color: #1d2026 !important;
+}
 
 main .content-wrapper .content-block, .fusion-card-list .fusion-card-item .fusion-card-item {
     background-color: #1d2026 !important;
