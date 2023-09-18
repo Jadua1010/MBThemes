@@ -484,3 +484,27 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
   filter: saturate(00%) brightness(60%); /* Adjust the saturation value as needed */
   transition: filter 0.3s ease; /* Add a smooth transition effect */
 }
+
+textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-file:not(:empty), .form-control {
+    background-color: #3C434B !important;
+    color: #fff !important;
+}
+
+.content-section .section, .content-section .section-full-width, .form-section .section, .form-section .section-full-width, .content-section.top-decrease {
+    background-color: #15181d !important;
+}
+
+.content-block .pagination span, .content-block .pagination a {
+    background-color: #23272e !important;
+} 
+.content-block .pagination a:hover {
+    background-color: #3c434f !important;
+}
+
+.task-completion-chart-section, .task-completion-chart-section .task-completion-chart-component .task-chart-wrapper .task-chart {
+    background-color: #3c434f !important;
+}
+
+.stream-plans-container .sortable-stream .node:nth-child(2n+1):not(.js-favourite) {
+    background: #15181d !important;
+}
