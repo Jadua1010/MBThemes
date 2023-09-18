@@ -453,3 +453,34 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
 .popover, .modal.primary .modal-content {
     background-color: #15181d !important;
 }
+
+.ib-coursework-banner {
+    background-color: #000;
+}
+
+/* CSS for the container */
+.todoitem {
+}
+
+/* CSS for the checkbox */
+.todocheckbox {
+  width: 20px !important; /* Set the width of the checkbox */
+  height: 20px !important; /* Set the height of the checkbox */
+}
+
+.two-weeks-calendar tbody td.day ul li {
+  display: grid !important;
+  grid-template-columns: 23px 1fr !important; /* Create a two-column grid */
+  align-items: center !important; /* Vertically center the checkbox and content */
+  gap: 0px !important; /* Add spacing between the checkbox and content */
+}
+
+.expand-more-events {
+  display: none;
+}
+
+/* CSS for the saturation effect */
+.saturation-effect {
+  filter: saturate(00%) brightness(60%); /* Adjust the saturation value as needed */
+  transition: filter 0.3s ease; /* Add a smooth transition effect */
+}

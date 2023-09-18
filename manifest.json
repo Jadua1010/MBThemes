@@ -3,11 +3,12 @@
 
   "name": "MBThemes",
   "version": "0.1.0",
-  "description": "A managebac dark theme for a more pleasant experience",
+  "description": "A ManageBac dark theme for a more pleasant experience",
 
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["content.js"],
+    "js": ["resources/jquery-3.7.1.min.js", "content.js", "runner.js"],
+	
 	
     "matches": ["https://*.managebac.com/*"]
   }]
