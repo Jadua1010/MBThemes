@@ -455,7 +455,7 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
 }
 
 .ib-coursework-banner {
-    background-color: #000;
+    background-color: #000 !important;
 }
 
 /* CSS for the container */
@@ -507,4 +507,12 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .stream-plans-container .sortable-stream .node:nth-child(2n+1):not(.js-favourite) {
     background: #15181d !important;
+}
+
+.items-count, .help-block {
+    color: #e5e5e5 !important;
+}
+
+.core-project-journal-entries, .core-project-journal-entries .entry {
+    background-color: #1d2026 !important;
 }
