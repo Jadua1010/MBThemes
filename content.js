@@ -72,6 +72,12 @@ function initializeCheckboxes() {
 
       // Toggle the 'saturation-effect' class on the li element
       item.classList.toggle('saturation-effect', checkbox.checked);
+	  
+	  if (checkbox.checked) {
+		let sound = new Audio('https://drive.jaduastudios.com/images/webdata/ping.mp3');
+        // Play fun audio sound
+		  sound.play();
+      }
     });
 
     // Apply the saturation effect to elements that were loaded as checked from cookies
@@ -106,5 +112,4 @@ const intervalId = setInterval(function() {
     initializeCheckboxes();
   }
 }, 1000);
-	
-	
+
