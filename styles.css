@@ -405,3 +405,51 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
 .pbl:not(.project-section) .subsection {
     border: 0px solid #d9e7f7 !important;
 }
+
+.stream-wrapper .stream .node {
+    background-color: #3c434f !important;
+    border-radius: 10px !important;
+    border: 0px solid #ffffff00 !important;
+}
+
+.total-commander .file:nth-of-type(odd) {
+    background-color: rgb(44 49 63 / 50%) !important;
+}
+
+.total-commander .file:hover {
+	background-color: #3b4853 !important;
+}
+
+.fc-unthemed .fc-today {
+    background-color: #141414 !important;
+}
+
+.fc .fc-button-group>:first-child {
+    background-color: #3c434f !important;
+}
+
+.fc-unthemed td {
+    border-color: #3c434f !important;
+}
+
+.breadcrumbs:last-child {
+    background-color: #00000000 !important;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+    border-color: #00000000 !important;
+}
+
+.dropdown-menu .dropdown-menu-item {
+    background-color: #3c434f !important;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.home-page-customisation .fusion-card-list .fusion-card-item {
+    background-color: #2e3847 !important;
+}
+
+.popover, .modal.primary .modal-content {
+    background-color: #15181d !important;
+}
