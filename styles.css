@@ -468,13 +468,6 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
   height: 20px !important; /* Set the height of the checkbox */
 }
 
-.two-weeks-calendar tbody td.day ul li {
-  display: grid !important;
-  grid-template-columns: 23px 1fr !important; /* Create a two-column grid */
-  align-items: center !important; /* Vertically center the checkbox and content */
-  gap: 0px !important; /* Add spacing between the checkbox and content */
-}
-
 .expand-more-events {
   display: none;
 }

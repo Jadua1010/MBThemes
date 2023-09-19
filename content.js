@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function initializeCheckboxes() {
+	// Your CSS as text
+	var styles = `
+		.two-weeks-calendar tbody td.day ul li {
+		  display: grid !important;
+		  grid-template-columns: 23px 1fr !important; /* Create a two-column grid */
+		  align-items: center !important; /* Vertically center the checkbox and content */
+		  gap: 0px !important; /* Add spacing between the checkbox and content */
+		}
+	`
+	var styleSheet = document.createElement("style")
+	styleSheet.innerText = styles
+	document.head.appendChild(styleSheet)
   // Get all the elements that match your selector
   const listItems = document.querySelectorAll('.two-weeks-calendar tbody td.day ul li');
 
@@ -106,10 +118,19 @@ function initializeCheckboxes() {
   });
 }
 
+// Check the slider state at regular intervals
 const intervalId = setInterval(function() {
-  const todoItemElement = document.querySelector('.todoitem');
-  if (!todoItemElement) {
-    initializeCheckboxes();
-  }
+    // Retrieve the slider state from extension storage
+    chrome.storage.local.get(['toggleCheckboxes'], function(result) {
+        const sliderEnabled = result.toggleCheckboxes;
+
+        // Check the slider state and perform actions if needed
+        if (sliderEnabled === undefined || sliderEnabled === true) {
+            const todoItemElement = document.querySelector('.todoitem');
+            if (!todoItemElement) {
+                initializeCheckboxes();
+            }
+        }
+    });
 }, 1000);
 

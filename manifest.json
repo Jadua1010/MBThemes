@@ -4,18 +4,24 @@
   "name": "MBThemes",
   "version": "0.1.0",
   "description": "A ManageBac upgrade kit for a more pleasant experience",
+  "action":{
+        "default_popup": "menu.html",
+        "default_title": "MBThemes App"
+    },
    "icons": {
     "16": "resources/icon16.png",
     "32": "resources/icon32.png",
     "48": "resources/icon48.png",
     "128": "resources/icon128.png"
   },
+  
+  "permissions": [
+		"storage"
+	],
 
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["resources/jquery-3.7.1.min.js", "content.js", "runner.js"],
-	
-	
+    "js": ["resources/jquery-3.7.1.min.js", "content.js", "runner.js"],	
     "matches": ["https://*.managebac.com/*"]
   }]
 

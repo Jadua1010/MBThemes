@@ -1,0 +1,92 @@
+body{
+    background:#15181d;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+	font-family: open sans,-apple-system,blinkmacsystemfont,segoe ui,roboto,helvetica neue,arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+h1{
+    font-size:2em;
+    margin:0.67em 0;
+	color: #d1d6de;
+}
+
+label {
+	color: #d1d6de;
+}
+
+.site-header{
+    padding:9px 0;
+	color:#8A94A7;
+}
+
+.content {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #1d2026;
+	width: 400px;
+}
+
+.centred {
+	margin: auto;
+	width: 90%;
+}
+
+.switch input
+{
+  display: none;
+}
+
+
+/* Add this CSS for the toggle box */
+.toggle-box {
+    display: flex;
+    align-items: center;
+    background-color: #39424f;
+    padding: 10px;
+    border-radius: 10px;
+    color: #d1d6de;
+	font-size:1.4em;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #1570ef, 0 0 4px #1570ef;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1570ef;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    transition: 0.2s;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background-color: limeGreen;
+}
+
+input:checked + .slider {
+    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
