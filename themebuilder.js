@@ -92,6 +92,24 @@ function performThemeActions(theme) {
 				styleSheet.innerText = styles
 				document.head.appendChild(styleSheet)
             break;
+		case '6':
+            	var styles = `
+				:root {
+					--j-primary-bg: url("https://j.gifs.com/vMO2wL.gif");
+					--j-secondary-bg: url("https://j.gifs.com/vMO2wL.gif");
+					--j-contrast-bg: url("https://j.gifs.com/vMO2wL.gif");
+					--j-dark-bg: #121317;
+					--j-primary-text: #ffffff;
+					--j-tinted-text: #eff8ff;
+					--j-highlight-color: #3582fd;
+					--j-hover-color: #2f2f39;
+					--j-border-color: #393f4a;
+				}
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
         default:
             var styles = `
 				:root {
