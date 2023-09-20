@@ -5,6 +5,11 @@ body{
 	font-family: open sans,-apple-system,blinkmacsystemfont,segoe ui,roboto,helvetica neue,arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 
+:root {
+  --gray: #1d2026;
+  --darkgray: #4b5262;
+}
+
 h1{
     font-size:2em;
     margin:0.67em 0;
@@ -47,6 +52,8 @@ label {
     border-radius: 10px;
     color: #d1d6de;
 	font-size:1.4em;
+	margin-top: 10px;
+	justify-content: space-around;
 }
 
 .switch {
@@ -89,4 +96,50 @@ input:checked + .slider:before {
 
 input:checked + .slider {
     box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 2em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  height: 3em;
+  border-radius: 1em;
+  overflow: hidden;
+  max-width: 15em;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: relative;
+  padding: 1em;
+  background-color: #4b5262;
+  transition: .25s all ease;
+  pointer-events: inherit;
+}
+/* Transition */
+.select:hover::after {
+  color: limeGreen;
+}
+
+select {
+    font-family: inherit;
+    font-size: 0.8em;
 }
