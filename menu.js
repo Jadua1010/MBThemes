@@ -11,6 +11,15 @@ document.getElementById('toggleCheckboxes').addEventListener('change', function(
     });
 });
 
+document.getElementById('toggleHidden').addEventListener('change', function() {
+    const sliderEnabled = this.checked;
+    
+    // Save the slider state to extension storage
+    chrome.storage.local.set({ 'toggleHidden': sliderEnabled }, function() {
+        console.log('Slider state saved to extension storage');
+    });
+});
+
 // Function to initialize the slider state from extension storage
 function initializeSliderState() {
     // Retrieve the slider state from extension storage
@@ -19,6 +28,17 @@ function initializeSliderState() {
 
         // Get the slider element
         const slider = document.getElementById('toggleCheckboxes');
+
+        // Set the slider's checked state based on the value from extension storage
+        if (sliderEnabled !== undefined) {
+            slider.checked = sliderEnabled;
+        }
+    });
+	chrome.storage.local.get(['toggleHidden'], function(result) {
+        const sliderEnabled = result.toggleHidden;
+
+        // Get the slider element
+        const slider = document.getElementById('toggleHidden');
 
         // Set the slider's checked state based on the value from extension storage
         if (sliderEnabled !== undefined) {

@@ -139,10 +139,12 @@ h3 a, .h3 a, .pbl:not(.project-section) .pbl-header a, h4 a, .h4 a, .pbl:not(.pr
 
 .two-weeks-calendar tbody td.day {
     border: 0px solid var(--j-border-color) !important;
+	transition: 0.5s;
 }
 
 .two-weeks-calendar tbody td.day ul li a:not(.expand-more-events), .calendar.full-calendar .fc-event .fc-content {
 	color: #ffffff !important;
+	transition: 0.5s;
 }
 
 .table-striped>tbody>tr:nth-of-type(odd), .table-fusion>tbody>tr:nth-of-type(odd) {
@@ -172,12 +174,13 @@ h3 a, .h3 a, .pbl:not(.project-section) .pbl-header a, h4 a, .h4 a, .pbl:not(.pr
     background: #fff0 !important;
     border-color: var(--j-border-color) !important;
 }
+
 div .btn:hover, .btn-light:hover, .btn-secondary:hover, .btn-light.active:hover, .btn-secondary.active:hover, .pill:hover, .grid-nav-tile .btn:hover {
    background: var(--j-contrast-bg) !important;
    transition: 0.2s;
 }
 
-div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus {
+div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus, .tile-navigation a.btn {
     background: var(--j-contrast-bg) !important;
 }
 
@@ -539,6 +542,13 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
   transition: filter 0.3s ease; /* Add a smooth transition effect */
 }
 
+.hide {
+  visibility: hidden !important;
+  height: 0px !important;
+  margin-bottom: 0px !important;
+  padding: 0px !important;
+}
+
 textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-file:not(:empty), .form-control {
     background: var(--j-contrast-bg) !important;
     color: var(--j-primary-text) !important;
@@ -573,4 +583,26 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .turbolinks-progress-bar {
 	background: var(--j-highlighted-color) !important;
+}
+
+.left-side .side-container, .study-mode .unit-container .fusion-card-item, .study-mode .task-container .fusion-card-item, .presentation-mode .unit-container .fusion-card-item, .presentation-mode .task-container .fusion-card-item {
+	background: var(--j-contrast-bg) !important;
+}
+
+.study-mode .unit-container, .study-mode .task-container, .presentation-mode .unit-container, .presentation-mode .task-container, .panel-body {
+	background: var(--j-secondary-bg) !important;
+}
+
+.unit-sections-at-a-glance .unit-section-at-a-glance .panel-heading, .left-side .side-container>h3, .channel-app-tab-panel .channel-app-tab-title {
+	background: var(--j-highlight-color) !important;
+	color: var(--j-primary-text) !important;
+}
+
+.tile-navigation, .unit-sections-at-a-glance .unit-section-at-a-glance {
+	background: var(--j-primary-bg) !important;
+}
+
+.channel-app-tab-panel #personal-note-form .js-personal-note-form, .channel-app-tab-panel #personal-note-form .js-personal-note-form form, .channel-app-tab-panel #personal-note-form .js-personal-note-form .form-group, .channel-app-tab-panel #personal-note-form .js-personal-note-form .redactor-box, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form form, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .form-group, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .redactor-box {
+	background: var(--j-contrast-bg) !important;
+	color: var(--j-primary-text) !important;
 }

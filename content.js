@@ -81,6 +81,15 @@ function initializeCheckboxes() {
     // Add an event listener to update local storage when the checkbox state changes
     checkbox.addEventListener('change', () => {
       localStorage.setItem(`checkbox_${eventId}`, checkbox.checked);
+	  
+	  chrome.storage.local.get(['toggleHidden'], function(result) {
+        const toggleHidden = result.toggleHidden;
+
+        // Check the slider state and perform actions if needed
+        if (toggleHidden === true) {
+			item.classList.toggle('hidden', checkbox.checked);
+        }
+    });
 
       // Toggle the 'saturation-effect' class on the li element
       item.classList.toggle('saturation-effect', checkbox.checked);
@@ -94,6 +103,14 @@ function initializeCheckboxes() {
 
     // Apply the saturation effect to elements that were loaded as checked from cookies
     if (checkbox.checked) {
+		chrome.storage.local.get(['toggleHidden'], function(result) {
+			const toggleHidden = result.toggleHidden;
+
+			// Check the slider state and perform actions if needed
+			if (toggleHidden === true) {
+				item.classList.toggle('hide', checkbox.checked);
+			}
+		});
       item.classList.add('saturation-effect');
     }
 
