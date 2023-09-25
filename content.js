@@ -87,7 +87,7 @@ function initializeCheckboxes() {
 
         // Check the slider state and perform actions if needed
         if (toggleHidden === true) {
-			item.classList.toggle('hidden', checkbox.checked);
+			item.classList.toggle('hide', checkbox.checked);
         }
     });
 

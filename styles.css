@@ -581,10 +581,6 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
     background: var(--j-secondary-bg) !important;
 }
 
-.turbolinks-progress-bar {
-	background: var(--j-highlighted-color) !important;
-}
-
 .left-side .side-container, .study-mode .unit-container .fusion-card-item, .study-mode .task-container .fusion-card-item, .presentation-mode .unit-container .fusion-card-item, .presentation-mode .task-container .fusion-card-item {
 	background: var(--j-contrast-bg) !important;
 }
