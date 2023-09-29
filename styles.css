@@ -171,7 +171,7 @@ h3 a, .h3 a, .pbl:not(.project-section) .pbl-header a, h4 a, .h4 a, .pbl:not(.pr
 
 .btn-light, .btn-secondary {
     color: var(--j-tinted-text) !important;
-    background: #fff0 !important;
+    background: var(--j-constrast-bg) !important;
     border-color: var(--j-border-color) !important;
 }
 
@@ -180,7 +180,7 @@ div .btn:hover, .btn-light:hover, .btn-secondary:hover, .btn-light.active:hover,
    transition: 0.2s;
 }
 
-div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus, .tile-navigation a.btn {
+div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, div .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus, .tile-navigation a.btn, .btn-light.active, .btn-light:focus {
     background: var(--j-contrast-bg) !important;
 }
 
@@ -372,7 +372,7 @@ label {
 }
 
 .osc-study-banner, .homepage .sections-wrapper.subjects-page .subject-image-container .details, .homepage .sections-wrapper.subjects-page .subject-image-container .fusion-section-content, .events-calendar-container .events-month .fusion-card, .subjects-page .fusion-cell-group .fusion-cell-group-item, .subjects-page .fusion-tiles-item.item {
-    background: #080808 !important;
+    background: var(--j-dark-bg) !important;
 	border: 0px solid var(--j-border-color) !important;
 }
 
@@ -600,5 +600,14 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .channel-app-tab-panel #personal-note-form .js-personal-note-form, .channel-app-tab-panel #personal-note-form .js-personal-note-form form, .channel-app-tab-panel #personal-note-form .js-personal-note-form .form-group, .channel-app-tab-panel #personal-note-form .js-personal-note-form .redactor-box, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form form, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .form-group, .channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .redactor-box {
 	background: var(--j-contrast-bg) !important;
+	color: var(--j-primary-text) !important;
+}
+
+.fusion-tiles-item {
+    background-color: var(--j-dark-bg) !important;
+	
+}
+
+.fusion-tiles-item .caption {
 	color: var(--j-primary-text) !important;
 }

@@ -151,3 +151,42 @@ const intervalId = setInterval(function() {
     });
 }, 1000);
 
+// Find all img elements on the page
+const images = document.querySelectorAll('img');
+
+images.forEach((image) => {
+  // Store the original src attribute in data-src
+  image.dataset.src = image.src;
+
+  // Remove the src attribute to prevent immediate loading
+  image.removeAttribute('src');
+});
+
+// Define a callback function for the Intersection Observer
+const lazyLoadCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const image = entry.target;
+      const dataSrc = image.dataset.src;
+
+      // Set the src attribute to load the image
+      image.src = dataSrc;
+
+      // Remove the dataset attribute to mark it as loaded
+      delete image.dataset.src;
+
+      // Unobserve the image to stop observing it
+      observer.unobserve(image);
+    }
+  });
+};
+
+// Create an Intersection Observer instance
+const observer = new IntersectionObserver(lazyLoadCallback);
+
+// Observe all img elements with a data-src attribute
+images.forEach((image) => {
+  if (image.dataset.src) {
+    observer.observe(image);
+  }
+});

@@ -110,6 +110,42 @@ function performThemeActions(theme) {
 				styleSheet.innerText = styles
 				document.head.appendChild(styleSheet)
             break;
+		case '7':
+            var styles = `
+				:root {
+					--j-primary-bg: #f8ceec;
+					--j-secondary-bg: #ffe7f9;
+					--j-contrast-bg: #ffade4;
+					--j-dark-bg: #fffafd;
+					--j-primary-text: #000000;
+					--j-tinted-text: #412836;
+					--j-highlight-color: #bf0081;
+					--j-hover-color: #bf0081;
+					--j-border-color: #ffc4ee;
+				}
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
+		case '8':
+            var styles = `
+				:root {
+					--j-primary-bg: #f3f3f3;
+					--j-secondary-bg: #ffffff;
+					--j-contrast-bg: #ffffff;
+					--j-dark-bg: #fde6d3;
+					--j-primary-text: #000000;
+					--j-tinted-text: #283241;
+					--j-highlight-color: #e0601c;
+					--j-hover-color: #e0601c;
+					--j-border-color: #c8d0dd;
+				}
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
         default:
             var styles = `
 				:root {
