@@ -604,10 +604,18 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 }
 
 .fusion-tiles-item {
-    background-color: var(--j-dark-bg) !important;
+    background: var(--j-dark-bg) !important;
 	
 }
 
 .fusion-tiles-item .caption {
 	color: var(--j-primary-text) !important;
+}
+
+.dropbox-item-dragging {
+    background:  var(--j-contrast-bg) !important;
+}
+
+.nav-pills>li>a:hover, .ib-class-component .btn-fake {
+    background:  var(--j-contrast-bg) !important;
 }
