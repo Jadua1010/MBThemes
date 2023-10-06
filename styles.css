@@ -180,6 +180,15 @@ div .btn:hover, .btn-light:hover, .btn-secondary:hover, .btn-light.active:hover,
    transition: 0.2s;
 }
 
+div .btn:focus, .btn-light:focus, .btn-secondary:focus, .btn-light.active:focus, .btn-secondary.active:focus, .pill:focus, .grid-nav-tile .btn:focus {
+   background: var(--j-dark-bg) !important;
+   transition: 0.2s;
+}
+
+.btn-light:focus:active, .btn-light.active:focus, .btn-secondary:focus:active, .btn-secondary.active:focus, div .btn:focus:active, pill:focus:active {
+    background: var(--j-dark-bg) !important;
+}
+
 div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus, .btn-light:focus:active, div .btn-light.active:focus, .btn-secondary:active, .btn-secondary.active, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:focus:active, .btn-secondary.active:focus, .tile-navigation a.btn, .btn-light.active, .btn-light:focus {
     background: var(--j-contrast-bg) !important;
 }
@@ -618,4 +627,18 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .nav-pills>li>a:hover, .ib-class-component .btn-fake {
     background:  var(--j-contrast-bg) !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    background: var(--j-highlight-color) !important;
+}
+
+.highcharts-background {
+    fill: var(--j-dark-bg) !important;
+}
+
+.show-spinner {
+    backdrop-filter: blur(5px) !important;
+    background: #ffffff20 !important;
+    animation: fadeIn 0.2s;
 }
