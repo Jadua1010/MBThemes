@@ -69,4 +69,3 @@ document.querySelector('select').addEventListener('change', function() {
         console.log('Theme value saved to Chrome storage: ' + selectedValue);
     });
 });
-

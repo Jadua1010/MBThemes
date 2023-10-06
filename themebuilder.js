@@ -146,6 +146,42 @@ function performThemeActions(theme) {
 				styleSheet.innerText = styles
 				document.head.appendChild(styleSheet)
             break;
+        case '9':
+            var styles = `
+				:root {
+                    --j-primary-bg: #f3f3f3;
+                    --j-secondary-bg: #ffffff;
+                    --j-contrast-bg: #ffffff;
+                    --j-dark-bg: #fde6d3;
+                    --j-primary-text: #000000;
+                    --j-tinted-text: #283241;
+                    --j-highlight-color: #ca815a;
+                    --j-hover-color: #e0601c;
+                    --j-border-color: #c8d0dd;
+                }
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
+        case '10':
+            var styles = `
+				:root {
+                    --j-primary-bg: #100d0b;
+                    --j-secondary-bg: #26201b;
+                    --j-contrast-bg: #604b3d;
+                    --j-dark-bg: #180f18;
+                    --j-primary-text: #ffffff;
+                    --j-tinted-text: #f7e8ff;
+                    --j-highlight-color: #e09965;
+                    --j-hover-color: #e09965;
+                    --j-border-color: #393f4a;
+                }
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
         default:
             var styles = `
 				:root {
@@ -176,6 +212,6 @@ chrome.storage.sync.get(['theme'], function(result) {
         performThemeActions(savedTheme);
     } else {
         // Handle the case when no theme is saved (you can add default actions here)
-        console.log('No theme saved.');
+        performThemeActions(savedTheme);
     }
 });
