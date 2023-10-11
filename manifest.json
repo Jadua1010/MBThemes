@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
 
-  "name": "MBThemes",
+  "name": "ManageBac Plus",
   "version": "0.1.0",
   "description": "A ManageBac upgrade kit for a more pleasant experience",
   "action":{
@@ -22,7 +22,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["resources/jquery-3.7.1.min.js", "content.js", "runner.js", "themebuilder.js"],	
-    "matches": ["https://*.managebac.com/*"]
+    "matches": ["https://*.managebac.com/student/*"]
   }]
 
 }
