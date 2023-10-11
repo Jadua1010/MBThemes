@@ -1,12 +1,12 @@
 {
   "manifest_version": 3,
 
-  "name": "ManageBac Plus",
-  "version": "0.1.0",
+  "name": "ManageBac Pro",
+  "version": "1.0.0",
   "description": "A ManageBac upgrade kit for a more pleasant experience",
   "action":{
         "default_popup": "menu.html",
-        "default_title": "MBThemes App"
+        "default_title": "MBPro App"
     },
    "icons": {
     "16": "resources/icon16.png",
