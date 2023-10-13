@@ -645,5 +645,5 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 }
 
 .js-flash-area .flash :last-child, .js-flash-area-custom .flash :last-child, .flash-guidance .flash :last-child {
-    color: var(--j-dark-bg) !important;
+    color: #000000 !important;
 }
