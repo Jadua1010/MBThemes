@@ -314,7 +314,7 @@ main .sidebar section .section-title, .activity-tile .description, .activity-til
 
 .blank-slate-container:not(.white-bg)::before {
     background-image: url(https://drive.jaduastudios.com/images/webdata/backgroundgraphic.png) !important;
-    background-color: var(--j-dark-bg) !important;
+    background-color: var(--j-contrast-bg) !important;
 }
 
 label {
