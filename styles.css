@@ -313,7 +313,8 @@ main .sidebar section .section-title, .activity-tile .description, .activity-til
 }
 
 .blank-slate-container:not(.white-bg)::before {
-    filter: invert(1) brightness(200%) hue-rotate(185deg) contrast(80%) !important;
+    background-image: url(https://drive.jaduastudios.com/images/webdata/backgroundgraphic.png) !important;
+    background-color: var(--j-contrast-bg) !important;
 }
 
 label {
@@ -641,4 +642,8 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
     backdrop-filter: blur(5px) !important;
     background: #ffffff20 !important;
     animation: fadeIn 0.2s;
+}
+
+.js-flash-area .flash :last-child, .js-flash-area-custom .flash :last-child, .flash-guidance .flash :last-child {
+    color: var(--j-dark-bg) !important;
 }
