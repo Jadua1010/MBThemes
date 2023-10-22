@@ -215,3 +215,53 @@ chrome.storage.sync.get(['theme'], function(result) {
         performThemeActions(savedTheme);
     }
 });
+
+chrome.storage.local.get(['toggleThreeD'], function(result) {
+	const sliderEnabled = result.toggleThreeD;
+	console.log('Checking for 3D');
+	// Check the slider state and perform actions if needed
+	if (sliderEnabled === true) {
+		var styles = `
+
+
+main .content-wrapper .content-block, .f-menu {
+    box-shadow: 0 0 10px var(--j-dark-bg) !important;
+}
+
+.theme-dark_blue, .theme-white, .reference-guides, .dropdown-menu, .avatar {
+	box-shadow: 0 0 10px var(--j-dark-bg) !important;
+}
+
+.reference-guides, .btn {
+	box-shadow: 0 0 5px var(--j-dark-bg) !important;
+}
+
+.btn-main, .date-badge {
+	box-shadow: 0 0 5px var(--j-highlight-color) !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  box-shadow: 0 0 10px var(--j-dark-bg) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--j-contrast-bg) !important; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--j-highlight-color) !important; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--j-tinted-text) !important; 
+}
+
+
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet) 
+	}
+});

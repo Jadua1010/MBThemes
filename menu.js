@@ -20,6 +20,15 @@ document.getElementById('toggleHidden').addEventListener('change', function() {
     });
 });
 
+document.getElementById('toggleThreeD').addEventListener('change', function() {
+    const threeDEnabled = this.checked;
+    
+    // Save the slider state to extension storage
+    chrome.storage.local.set({ 'toggleThreeD': threeDEnabled }, function() {
+        console.log('Slider state saved to extension storage');
+    });
+});
+
 // Function to initialize the slider state from extension storage
 function initializeSliderState() {
     // Retrieve the slider state from extension storage
@@ -39,6 +48,17 @@ function initializeSliderState() {
 
         // Get the slider element
         const slider = document.getElementById('toggleHidden');
+
+        // Set the slider's checked state based on the value from extension storage
+        if (sliderEnabled !== undefined) {
+            slider.checked = sliderEnabled;
+        }
+    });
+	chrome.storage.local.get(['toggleThreeD'], function(result) {
+        const sliderEnabled = result.toggleThreeD;
+
+        // Get the slider element
+        const slider = document.getElementById('toggleThreeD');
 
         // Set the slider's checked state based on the value from extension storage
         if (sliderEnabled !== undefined) {
