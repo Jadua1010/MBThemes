@@ -241,21 +241,11 @@ main .content-wrapper .content-block, .f-menu {
 }
 
 ::-webkit-scrollbar {
-  width: 10px !important;
   box-shadow: 0 0 10px var(--j-dark-bg) !important;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--j-contrast-bg) !important; 
-}
-
 ::-webkit-scrollbar-thumb {
-  background: var(--j-highlight-color) !important; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--j-tinted-text) !important; 
+  box-shadow: 0 0 10px var(--j-highlight-color) !important;
 }
 
 

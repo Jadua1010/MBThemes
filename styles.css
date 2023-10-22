@@ -647,3 +647,20 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 .js-flash-area .flash :last-child, .js-flash-area-custom .flash :last-child, .flash-guidance .flash :last-child {
     color: #000000 !important;
 }
+
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--j-contrast-bg) !important; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--j-highlight-color) !important; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--j-tinted-text) !important; 
+}
