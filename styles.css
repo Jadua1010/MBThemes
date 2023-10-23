@@ -648,6 +648,10 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
     color: #000000 !important;
 }
 
+.plan .subjects .subjects-row .tile.subject>.footer:not(.tok), .plan .subjects .nested-subjects-row .tile.subject>.footer:not(.tok), .plan .subjects .subjects-row .tile.subject>.footer:not(.tok), .plan .subjects .nested-subjects-row .tile.subject>.footer:not(.tok), .plan .subject-groups .subject-groups-main .subject-group:hover, .plan .subject-groups .subject-groups-main .subject-group.active {
+    background: var(--j-contrast-bg);
+}
+
 ::-webkit-scrollbar {
   width: 10px !important;
 }
