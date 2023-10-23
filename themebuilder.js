@@ -204,7 +204,7 @@ function performThemeActions(theme) {
 }
 
 // Load the saved theme value from browser storage
-storage.sync.get(['theme'], function(result) {
+browser.storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Check if a theme is saved and perform actions accordingly
@@ -216,7 +216,7 @@ storage.sync.get(['theme'], function(result) {
     }
 });
 
-storage.local.get(['toggleThreeD'], function(result) {
+browser.storage.local.get(['toggleThreeD'], function(result) {
 	const sliderEnabled = result.toggleThreeD;
 	console.log('Checking for 3D');
 	// Check the slider state and perform actions if needed

@@ -73,16 +73,16 @@ function initializeCheckboxes() {
     checkbox.type = 'checkbox';
 
     // Check if there's a stored value for this checkbox in local storage based on the event_id
-    const storedValue = localStorage.getItem(`checkbox_${eventId}`);
+    const storedValue = localbrowser.storage.getItem(`checkbox_${eventId}`);
 
     // Set the initial state based on the stored value (if available)
     checkbox.checked = storedValue === 'true';
 
     // Add an event listener to update local storage when the checkbox state changes
     checkbox.addEventListener('change', () => {
-      localStorage.setItem(`checkbox_${eventId}`, checkbox.checked);
+      localbrowser.storage.setItem(`checkbox_${eventId}`, checkbox.checked);
 	  
-	  storage.local.get(['toggleHidden'], function(result) {
+	  browser.storage.local.get(['toggleHidden'], function(result) {
         const toggleHidden = result.toggleHidden;
 
         // Check the slider state and perform actions if needed
@@ -103,7 +103,7 @@ function initializeCheckboxes() {
 
     // Apply the saturation effect to elements that were loaded as checked from cookies
     if (checkbox.checked) {
-		storage.local.get(['toggleHidden'], function(result) {
+		browser.storage.local.get(['toggleHidden'], function(result) {
 			const toggleHidden = result.toggleHidden;
 
 			// Check the slider state and perform actions if needed
@@ -138,7 +138,7 @@ function initializeCheckboxes() {
 // Check the slider state at regular intervals
 const intervalId = setInterval(function() {
     // Retrieve the slider state from extension storage
-    storage.local.get(['toggleCheckboxes'], function(result) {
+    browser.storage.local.get(['toggleCheckboxes'], function(result) {
         const sliderEnabled = result.toggleCheckboxes;
 
         // Check the slider state and perform actions if needed
