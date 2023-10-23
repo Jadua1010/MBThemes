@@ -23,9 +23,9 @@ if (localStorage.getItem(currentPageUrl) === null) {
 }
 */
 
-// Function to set default values in Chrome storage if they are empty or undefined
+// Function to set default values in browser storage if they are empty or undefined
 function setDefaultValues() {
-    chrome.storage.local.get(['toggleCheckboxes'], function(result) {
+    storage.local.get(['toggleCheckboxes'], function(result) {
         let sliderEnabled = result.toggleCheckboxes;
 
         // Check if the value is empty or undefined
@@ -33,12 +33,12 @@ function setDefaultValues() {
             // Set a default value
             sliderEnabled = true; // Change this to your desired default value
             // Save the default value to extension storage
-            chrome.storage.local.set({ toggleCheckboxes: sliderEnabled }, function() {
+            storage.local.set({ toggleCheckboxes: sliderEnabled }, function() {
                 console.log('Default slider state saved to extension storage');
             });
         }
     });
-    chrome.storage.local.get(['toggleHidden'], function(result) {
+    storage.local.get(['toggleHidden'], function(result) {
         let sliderEnabled = result.toggleHidden;
 
         // Check if the value is empty or undefined
@@ -46,17 +46,17 @@ function setDefaultValues() {
             // Set a default value
             sliderEnabled = false; // Change this to your desired default value
             // Save the default value to extension storage
-            chrome.storage.local.set({ toggleHidden: sliderEnabled }, function() {
+            storage.local.set({ toggleHidden: sliderEnabled }, function() {
                 console.log('Default slider state saved to extension storage');
             });
         }
     });
-    chrome.storage.local.get(['theme'], function(result) {
+    storage.local.get(['theme'], function(result) {
         let themeType = result.theme;
         // Check if the value is empty or undefined
         if (themeType === undefined || themeType === null) {
             themeType = 1; // Assign the default value directly to the outer variable
-            chrome.storage.local.set({ theme: themeType }, function() {
+            storage.local.set({ theme: themeType }, function() {
                 console.log('Default theme value saved to extension storage');
             });
         }

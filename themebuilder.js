@@ -203,8 +203,8 @@ function performThemeActions(theme) {
     }
 }
 
-// Load the saved theme value from Chrome storage
-chrome.storage.sync.get(['theme'], function(result) {
+// Load the saved theme value from browser storage
+storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Check if a theme is saved and perform actions accordingly
@@ -216,7 +216,7 @@ chrome.storage.sync.get(['theme'], function(result) {
     }
 });
 
-chrome.storage.local.get(['toggleThreeD'], function(result) {
+storage.local.get(['toggleThreeD'], function(result) {
 	const sliderEnabled = result.toggleThreeD;
 	console.log('Checking for 3D');
 	// Check the slider state and perform actions if needed
