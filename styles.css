@@ -198,6 +198,10 @@ div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus
 	animation: fade ease 0.2s;
 }
 
+.status-section p, .status-section .section-content, .audit-log-section p, .audit-log-section .section-content, .access-permissions-section p, .access-permissions-section .section-content {
+    background: var(--j-contrast-bg) !important;
+}
+
 .date-badge .day {
     border: 0px solid var(--j-border-color) !important;
     background: var(--j-highlight-color) !important;
@@ -668,4 +672,8 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--j-tinted-text) !important; 
+}
+
+span {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
