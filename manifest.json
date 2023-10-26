@@ -2,7 +2,7 @@
   "manifest_version": 3,
 
   "name": "ManageBac Pro",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A ManageBac upgrade kit for a more pleasant experience",
   "action":{
         "default_popup": "menu.html",
