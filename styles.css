@@ -677,3 +677,13 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 span {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+
+/*Fix colour boxes*/
+
+.color-box {
+    --f-color-box-after-opacity: 1 !important;
+}
+
+.event-time {
+    color: #ffffff !important;
+}
