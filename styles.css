@@ -536,10 +536,6 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
     background: var(--j-dark-bg) !important;
 }
 
-/* CSS for the container */
-.todoitem {
-}
-
 /* CSS for the checkbox */
 .todocheckbox {
   width: 20px !important; /* Set the width of the checkbox */
@@ -682,6 +678,7 @@ span {
 
 .color-box {
     --f-color-box-after-opacity: 1 !important;
+	padding-left: 5px;
 }
 
 .event-time {
@@ -694,4 +691,23 @@ span {
 
 input[type=checkbox] {
     box-shadow: 0 0 1px #000 !important;
+}
+
+.two-weeks-calendar tbody td.day ul li {
+  border-radius: 6px;
+  display: block !important;
+}
+
+/* CSS for the container */
+.todoitem {
+	vertical-align: middle !important;
+	display: grid;
+	padding: 7px;
+}
+
+/* CSS for the container */
+.todoitem input[type=checkbox] {
+	width: 17.5px;
+	height: 17.5px;
+	z-index: 9999;
 }

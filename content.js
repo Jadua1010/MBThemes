@@ -45,7 +45,8 @@ function initializeCheckboxes() {
 		  display: grid !important;
 		  grid-template-columns: 23px 1fr !important; /* Create a two-column grid */
 		  align-items: center !important; /* Vertically center the checkbox and content */
-		  gap: 0px !important; /* Add spacing between the checkbox and content */
+		  gap: 0px !important; /* Remove spacing between the checkbox and content */
+		  justify-items: start;
 		}
 	`
 	var styleSheet = document.createElement("style")
@@ -68,6 +69,17 @@ function initializeCheckboxes() {
     // Create a new div to wrap the contents
     const container = document.createElement('div');
     container.classList.add('todoitem'); // Add a class for styling
+	
+	 // Find the child element with the class 'color-box' inside the list item
+    const colorBox = item.querySelector('.color-box');
+
+    if (colorBox) {
+        // Get the custom property --f-color-box-color from the 'color-box' element's style
+        const customBackgroundColor = getComputedStyle(colorBox).getPropertyValue('--f-color-box-color');
+
+        // Set the background color of the container to the custom background color
+        item.style.backgroundColor = customBackgroundColor;
+    }
 
     // Create a checkbox element
     const checkbox = document.createElement('input');

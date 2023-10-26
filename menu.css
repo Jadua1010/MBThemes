@@ -25,11 +25,23 @@ label {
 	color:#8A94A7;
 }
 
+.info {
+	padding: 5px;
+	background-color: #39424f;
+	border-radius: 10px;
+	margin-top: -15px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+	
+
 .content {
 	padding: 10px;
 	border-radius: 10px;
 	background-color: #1d2026;
 	width: 400px;
+	color: #d1d6de;
 }
 
 .centred {
