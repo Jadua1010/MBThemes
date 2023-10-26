@@ -7,6 +7,7 @@ if (!link) {
 link.href = 'https://drive.jaduastudios.com/images/webdata/mb2.ico';
 
 document.addEventListener('DOMContentLoaded', function () {
+
     // Create a container for the logo overlay
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');

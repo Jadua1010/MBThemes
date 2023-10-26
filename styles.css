@@ -687,3 +687,11 @@ span {
 .event-time {
     color: #ffffff !important;
 }
+
+.color-box .fi {
+  filter: invert(1) brightness(1.5);
+}
+
+input[type=checkbox] {
+    box-shadow: 0 0 1px #000 !important;
+}
