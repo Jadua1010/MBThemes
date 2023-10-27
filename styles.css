@@ -711,3 +711,8 @@ input[type=checkbox] {
 	height: 17.5px;
 	z-index: 9999;
 }
+
+.fc .fc-event {
+    color: var(--f-color-box-color) !important;
+    background-color: var(--f-color-box-color) !important;
+}
