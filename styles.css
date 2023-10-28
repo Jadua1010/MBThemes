@@ -5,6 +5,7 @@
 	--j-dark-bg: #000000;
 	--j-primary-text: #000000;
 	--j-tinted-text: #000000;
+	--j-grey-text: var(--j-tinted-text);
 	--j-highlight-color: #000000;
 	--j-hover-color: #000000;
 	--j-border-color: #000000;
@@ -593,9 +594,19 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .left-side .side-container, .study-mode .unit-container .fusion-card-item, .study-mode .task-container .fusion-card-item, .presentation-mode .unit-container .fusion-card-item, .presentation-mode .task-container .fusion-card-item {
 	background: var(--j-contrast-bg) !important;
+	border-radius: 15px !important;
 }
 
 .study-mode .unit-container, .study-mode .task-container, .presentation-mode .unit-container, .presentation-mode .task-container, .panel-body {
+	background: var(--j-secondary-bg) !important;
+	border-radius: 15px !important;
+}
+
+.panel, .panel-heading, .unit-cover-photo {
+	border-radius: 15px !important;
+}
+
+.panel-header, .presentation-page main .left-side {
 	background: var(--j-secondary-bg) !important;
 }
 
@@ -715,4 +726,50 @@ input[type=checkbox] {
 .fc .fc-event {
     color: var(--f-color-box-color) !important;
     background-color: var(--f-color-box-color) !important;
+}
+
+.discussion.new-discussion.pinned {
+	background: none !important;
+	border-color: var(--j-highlight-color) !important;
+}
+
+.discussion.new-discussion.pinned p {
+	background: none !important;
+}
+
+.fr-box .fr-toolbar .fr-btn-grp>.fr-command .fr-svg path {
+	fill: var(--j-tinted-text) !important;
+}
+
+.redactor-toolbar a.re-button-icon, .redactor-air a.re-button-icon {
+	background: var(--j-dark-bg) !important;
+}
+
+.request-indicator {
+	background: var(--j-dark-bg) !important;
+}
+
+.channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .redactor-box {
+	background: var(--j-primary-bg) !important;
+}
+
+.redactor-placeholder:before {
+	color: var(--j-tinted-text) !important;
+}
+
+.calendar-tile.guides-tile:not(:hover) .title {
+	color: var(--j-tinted-text) !important;
+}
+
+.gray-text, .text-muted, .calendar-widget .current-date .month, .timeline-item .posted-date {
+	color: var(--j-grey-text) !important;
+}
+
+.carousel-inline-section .multi-item-carousel .arrows .next, .carousel-inline-section .multi-item-carousel .arrows .prev {
+	background: var(--j-dark-bg) !important;
+}
+
+.navbar .navbar-nav>li>a .count {
+	color: var(--j-highlight-color) !important;
+	border-color: var(--j-highlight-color) !important;
 }
