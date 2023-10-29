@@ -317,7 +317,7 @@ main .sidebar section .section-title, .activity-tile .description, .activity-til
   100% { transform: scale(1); }
 }
 
-.blank-slate-container:not(.white-bg)::before {
+.blank-slate-container:not(.white-bg)::before, .blank-slate-background {
     background-image: url(https://drive.jaduastudios.com/images/webdata/backgroundgraphic.png) !important;
     background-color: var(--j-contrast-bg) !important;
 }
@@ -773,3 +773,8 @@ input[type=checkbox] {
 	color: var(--j-highlight-color) !important;
 	border-color: var(--j-highlight-color) !important;
 }
+
+.zendesk-launcher-button {
+	z-index: 999 !important;
+}
+
