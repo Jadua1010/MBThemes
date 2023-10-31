@@ -691,7 +691,6 @@ span {
 .color-box {
     --f-color-box-after-opacity: 1 !important;
 	padding-left: 5px;
-	border-radius: 0px !important;
 }
 
 .event-time {
