@@ -205,7 +205,7 @@ function performThemeActions(theme) {
 }
 
 // Load the saved theme value from browser storage
-browser.storage.local.get(['theme'], function(result) {
+browser.storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Check if a theme is saved and perform actions accordingly

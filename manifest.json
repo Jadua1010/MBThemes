@@ -22,14 +22,13 @@
   },
   
   "permissions": [
-		"storage",
-		"activeTab"
+		"storage"
 	],
 
   "content_scripts": [{
     "css": ["styles.css"],
-    "js": ["content.js", "runner.js", "themebuilder.js"],	
-    "matches": ["*://*.managebac.com/*"]
+    "js": ["content.js", "themebuilder.js", "runner.js"],	
+    "matches": ["*://*.managebac.com/student*"]
   }]
 
 }
