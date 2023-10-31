@@ -5,6 +5,7 @@
 	--j-dark-bg: #000000;
 	--j-primary-text: #000000;
 	--j-tinted-text: #000000;
+	--j-grey-text: var(--j-tinted-text);
 	--j-highlight-color: #000000;
 	--j-hover-color: #000000;
 	--j-border-color: #000000;
@@ -198,6 +199,10 @@ div .btn-light:active, div .btn-light.active, .btn-light:focus, .btn-light.focus
 	animation: fade ease 0.2s;
 }
 
+.status-section p, .status-section .section-content, .audit-log-section p, .audit-log-section .section-content, .access-permissions-section p, .access-permissions-section .section-content {
+    background: var(--j-contrast-bg) !important;
+}
+
 .date-badge .day {
     border: 0px solid var(--j-border-color) !important;
     background: var(--j-highlight-color) !important;
@@ -312,7 +317,7 @@ main .sidebar section .section-title, .activity-tile .description, .activity-til
   100% { transform: scale(1); }
 }
 
-.blank-slate-container:not(.white-bg)::before {
+.blank-slate-container:not(.white-bg)::before, .blank-slate-background {
     background-image: url(https://drive.jaduastudios.com/images/webdata/backgroundgraphic.png) !important;
     background-color: var(--j-contrast-bg) !important;
 }
@@ -532,10 +537,6 @@ main .content-wrapper.login-wrapper .content-block .form-actions {
     background: var(--j-dark-bg) !important;
 }
 
-/* CSS for the container */
-.todoitem {
-}
-
 /* CSS for the checkbox */
 .todocheckbox {
   width: 20px !important; /* Set the width of the checkbox */
@@ -593,9 +594,19 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 
 .left-side .side-container, .study-mode .unit-container .fusion-card-item, .study-mode .task-container .fusion-card-item, .presentation-mode .unit-container .fusion-card-item, .presentation-mode .task-container .fusion-card-item {
 	background: var(--j-contrast-bg) !important;
+	border-radius: 15px !important;
 }
 
 .study-mode .unit-container, .study-mode .task-container, .presentation-mode .unit-container, .presentation-mode .task-container, .panel-body {
+	background: var(--j-secondary-bg) !important;
+	border-radius: 15px !important;
+}
+
+.panel, .panel-heading, .unit-cover-photo {
+	border-radius: 15px !important;
+}
+
+.panel-header, .presentation-page main .left-side {
 	background: var(--j-secondary-bg) !important;
 }
 
@@ -669,3 +680,101 @@ textarea.form-control:not(:empty), body.mobile #dnd-upload textarea.js-multi-fil
 ::-webkit-scrollbar-thumb:hover {
   background: var(--j-tinted-text) !important; 
 }
+
+span {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*Fix colour boxes*/
+
+.color-box {
+    --f-color-box-after-opacity: 1 !important;
+	padding-left: 5px;
+}
+
+.event-time {
+    color: #ffffff !important;
+}
+
+.color-box .fi {
+  filter: invert(1) brightness(1.5);
+}
+
+input[type=checkbox] {
+    box-shadow: 0 0 1px #000 !important;
+}
+
+.two-weeks-calendar tbody td.day ul li {
+  border-radius: 6px;
+  display: block !important;
+}
+
+/* CSS for the container */
+.todoitem {
+	vertical-align: middle !important;
+	display: grid;
+	padding: 7px;
+}
+
+/* CSS for the container */
+.todoitem input[type=checkbox] {
+	width: 17.5px;
+	height: 17.5px;
+	z-index: 9999;
+}
+
+.fc .fc-event {
+    color: var(--f-color-box-color) !important;
+    background-color: var(--f-color-box-color) !important;
+}
+
+.discussion.new-discussion.pinned {
+	background: none !important;
+	border-color: var(--j-highlight-color) !important;
+}
+
+.discussion.new-discussion.pinned p {
+	background: none !important;
+}
+
+.fr-box .fr-toolbar .fr-btn-grp>.fr-command .fr-svg path {
+	fill: var(--j-tinted-text) !important;
+}
+
+.redactor-toolbar a.re-button-icon, .redactor-air a.re-button-icon {
+	background: var(--j-dark-bg) !important;
+}
+
+.request-indicator {
+	background: var(--j-dark-bg) !important;
+}
+
+.channel-app-tab-panel #js-channel-app-tab-notes .js-personal-note-form .redactor-box {
+	background: var(--j-primary-bg) !important;
+}
+
+.redactor-placeholder:before {
+	color: var(--j-tinted-text) !important;
+}
+
+.calendar-tile.guides-tile:not(:hover) .title {
+	color: var(--j-tinted-text) !important;
+}
+
+.gray-text, .text-muted, .calendar-widget .current-date .month, .timeline-item .posted-date {
+	color: var(--j-grey-text) !important;
+}
+
+.carousel-inline-section .multi-item-carousel .arrows .next, .carousel-inline-section .multi-item-carousel .arrows .prev {
+	background: var(--j-dark-bg) !important;
+}
+
+.navbar .navbar-nav>li>a .count {
+	color: var(--j-highlight-color) !important;
+	border-color: var(--j-highlight-color) !important;
+}
+
+.zendesk-launcher-button {
+	z-index: 999 !important;
+}
+

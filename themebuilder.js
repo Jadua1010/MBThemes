@@ -11,6 +11,7 @@ function performThemeActions(theme) {
 					--j-dark-bg: #121317;
 					--j-primary-text: #ffffff;
 					--j-tinted-text: #eff8ff;
+					--j-grey-text: #8296c5;
 					--j-highlight-color: #3582fd;
 					--j-hover-color: #2f2f39;
 					--j-border-color: #393f4a;
@@ -113,14 +114,14 @@ function performThemeActions(theme) {
 		case '7':
             var styles = `
 				:root {
-					--j-primary-bg: #f8ceec;
-					--j-secondary-bg: #ffe7f9;
-					--j-contrast-bg: #ffade4;
+					--j-primary-bg: #fad0d1;
+					--j-secondary-bg: #faf0e7;
+					--j-contrast-bg: #fef0f0;
 					--j-dark-bg: #fffafd;
-					--j-primary-text: #000000;
-					--j-tinted-text: #412836;
-					--j-highlight-color: #bf0081;
-					--j-hover-color: #bf0081;
+					--j-primary-text: #020b0a;
+					--j-tinted-text: #534859;
+					--j-highlight-color: #f9698d;
+					--j-hover-color: #f9698d;
 					--j-border-color: #ffc4ee;
 				}
 				`
