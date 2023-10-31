@@ -19,6 +19,7 @@
     --f-text-color: var(--j-primary-text) !important;
     --f-light-bg: var(--j-secondary-bg) !important;
     --f-light-bg-hover: var(--j-secondary-bg) !important;
+    --f-menu-background: var(--j-secondary-bg) !important;
 }
 
 body {
@@ -690,6 +691,7 @@ span {
 .color-box {
     --f-color-box-after-opacity: 1 !important;
 	padding-left: 5px;
+	background: none;
 }
 
 .event-time {
