@@ -68,7 +68,7 @@ function initializeSliderState() {
 }
 
 // Load the saved theme value from browser storage
-browser.storage.sync.get(['theme'], function(result) {
+browser.storage.local.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Set the saved theme as the initial selected value in the dropdown
@@ -84,7 +84,7 @@ document.querySelector('select').addEventListener('change', function() {
     const selectedValue = this.value;
 
     // Save the selected value to browser storage
-    browser.storage.sync.set({ theme: selectedValue }, function() {
+    browser.storage.local.set({ theme: selectedValue }, function() {
         // You can add a callback function here if needed
         console.log('Theme value saved to browser storage: ' + selectedValue);
     });

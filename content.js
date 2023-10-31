@@ -86,14 +86,14 @@ function initializeCheckboxes() {
     checkbox.type = 'checkbox';
 
     // Check if there's a stored value for this checkbox in local storage based on the event_id
-    const storedValue = localbrowser.storage.getItem(`checkbox_${eventId}`);
+    const storedValue = localStorage.getItem(`checkbox_${eventId}`);
 
     // Set the initial state based on the stored value (if available)
     checkbox.checked = storedValue === 'true';
 
     // Add an event listener to update local storage when the checkbox state changes
     checkbox.addEventListener('change', () => {
-      localbrowser.storage.setItem(`checkbox_${eventId}`, checkbox.checked);
+      localStorage.setItem(`checkbox_${eventId}`, checkbox.checked);
 	  
 	  browser.storage.local.get(['toggleHidden'], function(result) {
         const toggleHidden = result.toggleHidden;

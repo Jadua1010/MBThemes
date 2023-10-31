@@ -29,7 +29,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js", "runner.js", "themebuilder.js"],	
-    "matches": ["https://*.managebac.com/student/*"]
+    "matches": ["*://*.managebac.com/*"]
   }]
 
 }
