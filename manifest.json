@@ -28,7 +28,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js", "themebuilder.js", "runner.js"],	
-    "matches": ["*://*.managebac.com/student*"]
+    "matches": ["*://*.managebac.com/student*", "*://*.managebac.com/login*"]
   }]
 
 }
