@@ -6,7 +6,7 @@ document.getElementById('toggleCheckboxes').addEventListener('change', function(
     const sliderEnabled = this.checked;
     
     // Save the slider state to extension storage
-    browser.storage.local.set({ 'toggleCheckboxes': sliderEnabled }, function() {
+    chrome.storage.local.set({ 'toggleCheckboxes': sliderEnabled }, function() {
         console.log('Slider state saved to extension storage');
     });
 });
@@ -15,7 +15,7 @@ document.getElementById('toggleHidden').addEventListener('change', function() {
     const sliderEnabled = this.checked;
     
     // Save the slider state to extension storage
-    browser.storage.local.set({ 'toggleHidden': sliderEnabled }, function() {
+    chrome.storage.local.set({ 'toggleHidden': sliderEnabled }, function() {
         console.log('Slider state saved to extension storage');
     });
 });
@@ -24,7 +24,7 @@ document.getElementById('toggleThreeD').addEventListener('change', function() {
     const threeDEnabled = this.checked;
     
     // Save the slider state to extension storage
-    browser.storage.local.set({ 'toggleThreeD': threeDEnabled }, function() {
+    chrome.storage.local.set({ 'toggleThreeD': threeDEnabled }, function() {
         console.log('Slider state saved to extension storage');
     });
 });
@@ -32,7 +32,7 @@ document.getElementById('toggleThreeD').addEventListener('change', function() {
 // Function to initialize the slider state from extension storage
 function initializeSliderState() {
     // Retrieve the slider state from extension storage
-    browser.storage.local.get(['toggleCheckboxes'], function(result) {
+    chrome.storage.local.get(['toggleCheckboxes'], function(result) {
         const sliderEnabled = result.toggleCheckboxes;
 
         // Get the slider element
@@ -43,7 +43,7 @@ function initializeSliderState() {
             slider.checked = sliderEnabled;
         }
     });
-	browser.storage.local.get(['toggleHidden'], function(result) {
+	chrome.storage.local.get(['toggleHidden'], function(result) {
         const sliderEnabled = result.toggleHidden;
 
         // Get the slider element
@@ -54,7 +54,7 @@ function initializeSliderState() {
             slider.checked = sliderEnabled;
         }
     });
-	browser.storage.local.get(['toggleThreeD'], function(result) {
+	chrome.storage.local.get(['toggleThreeD'], function(result) {
         const sliderEnabled = result.toggleThreeD;
 
         // Get the slider element
@@ -67,8 +67,8 @@ function initializeSliderState() {
     });
 }
 
-// Load the saved theme value from browser storage
-browser.storage.sync.get(['theme'], function(result) {
+// Load the saved theme value from Chrome storage
+chrome.storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Set the saved theme as the initial selected value in the dropdown
@@ -83,9 +83,9 @@ document.querySelector('select').addEventListener('change', function() {
     // Get the selected value
     const selectedValue = this.value;
 
-    // Save the selected value to browser storage
-    browser.storage.sync.set({ theme: selectedValue }, function() {
+    // Save the selected value to Chrome storage
+    chrome.storage.sync.set({ theme: selectedValue }, function() {
         // You can add a callback function here if needed
-        console.log('Theme value saved to browser storage: ' + selectedValue);
+        console.log('Theme value saved to Chrome storage: ' + selectedValue);
     });
 });
