@@ -22,7 +22,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["resources/jquery-3.7.1.min.js", "content.js", "runner.js", "themebuilder.js"],	
-    "matches": ["https://*.managebac.com/student/*"]
+    "matches": ["https://*.managebac.com/student/*", "https://*.managebac.com/login/*"]
   }]
 
 }
