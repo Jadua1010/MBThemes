@@ -276,6 +276,10 @@ main .sidebar section .section-title, .activity-tile .description, .activity-til
     border-radius: 10px !important;
 }
 
+div .dropdown-menu li a:not(.disabled):hover {
+	color: var(--j-highlight-color) !important;
+}
+
 .dropdown-menu {
 	animation: bounce-in ease 0.5s;
     animation-iteration-count: 1;
