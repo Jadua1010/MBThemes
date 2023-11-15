@@ -8,7 +8,7 @@
 	  },
 
   "name": "ManageBac Pro",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "A ManageBac upgrade kit for a more pleasant experience",
   "action":{
         "default_popup": "menu.html",
@@ -28,7 +28,7 @@
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["content.js", "themebuilder.js", "runner.js"],	
-    "matches": ["*://*.managebac.com/student*", "*://*.managebac.com/login*"]
+    "matches": ["*://*.managebac.com/student*", "*://*.managebac.com/login*", "*://*.managebac.com/teacher/*"]
   }]
 
 }

@@ -771,3 +771,11 @@ input[type=checkbox] {
 	z-index: 999 !important;
 }
 
+
+.attendance-bar, cell .final-grade, .panel {
+    background: var(--j-contrast-bg) !important; 
+}
+#units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even) {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-primary-text) !important;
+}
