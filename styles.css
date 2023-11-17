@@ -772,8 +772,19 @@ input[type=checkbox] {
 }
 
 
-.attendance-bar, cell .final-grade, .panel {
+cell .final-grade, .panel {
     background: var(--j-contrast-bg) !important; 
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar {
+    background: var(--j-contrast-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar span:not(.active) {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-tinted-text) !important;
 }
 #units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even) {
     background: var(--j-dark-bg) !important;
