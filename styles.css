@@ -1,16 +1,3 @@
-:root {
-	--j-primary-bg: #000000;
-	--j-secondary-bg: #000000;
-	--j-contrast-bg: #000000;
-	--j-dark-bg: #000000;
-	--j-primary-text: #000000;
-	--j-tinted-text: #000000;
-	--j-grey-text: var(--j-tinted-text);
-	--j-highlight-color: #000000;
-	--j-hover-color: #000000;
-	--j-border-color: #000000;
-}
-
 .theme-dark_blue, .theme-white {
     --f-primary-color: linear-gradient(65deg,  var(--j-highlight-color) 0,  color-mix(in srgb, var(--j-highlight-color) 80%, white) 100%) !important; 
     --f-primary-color-hover: var(--j-highlight-color) !important;
@@ -694,7 +681,7 @@ span {
 
 .color-box {
     --f-color-box-after-opacity: 1 !important;
-	padding-left: 5px;
+	padding-left: 8px;
 	background: none;
 }
 
@@ -712,7 +699,7 @@ input[type=checkbox] {
 
 .two-weeks-calendar tbody td.day ul li {
   border-radius: 6px;
-  display: block !important;
+  display: grid !important;
 }
 
 /* CSS for the container */
@@ -784,30 +771,10 @@ input[type=checkbox] {
 	z-index: 999 !important;
 }
 
-.flash-guidance .flash {
-  color: var(--j-tinted-text) !important;
-  background: var(--j-dark-bg) !important;
-}
 
-.js-flash-area .flash :last-child, .js-flash-area-custom .flash :last-child, .flash-guidance .flash :last-child {
-    color: var(--j-tinted-text) !important;
-}
-
-cell .final-grade, .panel {
+.attendance-bar, cell .final-grade, .panel {
     background: var(--j-contrast-bg) !important; 
-    color: var(--j-primary-text) !important;
 }
-
-.attendance-bar {
-    background: var(--j-contrast-bg) !important;
-    color: var(--j-primary-text) !important;
-}
-
-.attendance-bar span:not(.active) {
-    background: var(--j-dark-bg) !important;
-    color: var(--j-tinted-text) !important;
-}
-
 #units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even) {
     background: var(--j-dark-bg) !important;
     color: var(--j-primary-text) !important;

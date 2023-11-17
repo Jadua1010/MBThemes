@@ -204,8 +204,8 @@ function performThemeActions(theme) {
     }
 }
 
-// Load the saved theme value from Chrome storage
-chrome.storage.sync.get(['theme'], function(result) {
+// Load the saved theme value from browser storage
+browser.storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
 
     // Check if a theme is saved and perform actions accordingly
@@ -217,7 +217,7 @@ chrome.storage.sync.get(['theme'], function(result) {
     }
 });
 
-chrome.storage.local.get(['toggleThreeD'], function(result) {
+browser.storage.local.get(['toggleThreeD'], function(result) {
 	const sliderEnabled = result.toggleThreeD;
 	console.log('Checking for 3D');
 	// Check the slider state and perform actions if needed
@@ -233,7 +233,7 @@ main .content-wrapper .content-block, .f-menu {
 	box-shadow: 0 0 10px var(--j-dark-bg) !important;
 }
 
-.reference-guides, .btn, .projects-wrapper .project-section {
+.reference-guides, .btn {
 	box-shadow: 0 0 5px var(--j-dark-bg) !important;
 }
 
@@ -303,22 +303,19 @@ margin-top: 20px !important;
 	animation: bounce-in2 ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-	&:hover {
-		transform: perspective(800px) rotateY(0deg);
-  }
 }
 
 @keyframes bounce-in2 {
   0% {
     opacity: 0;
-    transform: scale(.3) perspective(800px) rotateY(-50deg);;
+    transform: scale(.3) perspective(800px) rotateY(-10deg);;
   }
   50% {
     opacity: 1;
-    transform: scale(1.05) perspective(800px) rotateY(-20deg);
+    transform: scale(1.05) perspective(800px) rotateY(-10deg);
   }
   70% { transform: scale(.9) perspective(800px) rotateY(-10deg); }
-  100% { transform: scale(1) perspective(800px) rotateY(-2deg); }
+  100% { transform: scale(1) perspective(800px) rotateY(-10deg); }
 }
 
 .blank-slate-content {
@@ -367,27 +364,9 @@ margin-top: 20px !important;
 	transition: transform 0.3s ease 0s;
 
   &:hover {
-	box-shadow: 0 0 10px #fff;
+	box-shadow: 0 0 20px #fff;
     transform: perspective(3000px) translate3d(0px, 0px, 150px) rotateY(15deg) ;
   }
-}
-
-.fusion-card-list .fusion-card-item {
-	transition: transform 0.3s ease 0s, background 0.3s ease 0s;
-
-  &:hover {
-	background: var(--j-contrast-bg);
-    transform: perspective(3000px) translate3d(0px, 0px, 15px);
-  }
-}
-	
-
-.show-more {
-    background: var(--j-contrast-bg);
-    border-radius: 15px;
-    padding: 15px;
-	padding-bottom: 4px;
-	box-shadow: 0 0 5px var(--j-dark-bg) !important;
 }
 
 
