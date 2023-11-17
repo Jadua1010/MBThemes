@@ -313,7 +313,7 @@ main .content-wrapper .content-block, .f-menu {
 	box-shadow: 0 0 10px var(--j-dark-bg) !important;
 }
 
-.reference-guides, .btn {
+.reference-guides, .btn, .projects-wrapper .project-section {
 	box-shadow: 0 0 5px var(--j-dark-bg) !important;
 }
 
@@ -383,19 +383,22 @@ margin-top: 20px !important;
 	animation: bounce-in2 ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+	&:hover {
+		transform: perspective(800px) rotateY(0deg);
+  }
 }
 
 @keyframes bounce-in2 {
   0% {
     opacity: 0;
-    transform: scale(.3) perspective(800px) rotateY(-10deg);;
+    transform: scale(.3) perspective(800px) rotateY(-50deg);;
   }
   50% {
     opacity: 1;
-    transform: scale(1.05) perspective(800px) rotateY(-10deg);
+    transform: scale(1.05) perspective(800px) rotateY(-20deg);
   }
   70% { transform: scale(.9) perspective(800px) rotateY(-10deg); }
-  100% { transform: scale(1) perspective(800px) rotateY(-10deg); }
+  100% { transform: scale(1) perspective(800px) rotateY(-2deg); }
 }
 
 .blank-slate-content {
@@ -444,9 +447,27 @@ margin-top: 20px !important;
 	transition: transform 0.3s ease 0s;
 
   &:hover {
-	box-shadow: 0 0 20px #fff;
+	box-shadow: 0 0 10px #fff;
     transform: perspective(3000px) translate3d(0px, 0px, 150px) rotateY(15deg) ;
   }
+}
+
+.fusion-card-list .fusion-card-item {
+	transition: transform 0.3s ease 0s, background 0.3s ease 0s;
+
+  &:hover {
+	background: var(--j-contrast-bg);
+    transform: perspective(3000px) translate3d(0px, 0px, 15px);
+  }
+}
+	
+
+.show-more {
+    background: var(--j-contrast-bg);
+    border-radius: 15px;
+    padding: 15px;
+	padding-bottom: 4px;
+	box-shadow: 0 0 5px var(--j-dark-bg) !important;
 }
 
 
