@@ -786,8 +786,19 @@ input[type=checkbox] {
   background: var(--j-dark-bg) !important;
 }
 
-.attendance-bar, cell .final-grade, .panel {
+cell .final-grade, .panel {
     background: var(--j-contrast-bg) !important; 
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar {
+    background: var(--j-contrast-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar span:not(.active) {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-tinted-text) !important;
 }
 
 .attendance-bar {
