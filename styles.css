@@ -786,6 +786,10 @@ input[type=checkbox] {
   background: var(--j-dark-bg) !important;
 }
 
+.js-flash-area .flash :last-child, .js-flash-area-custom .flash :last-child, .flash-guidance .flash :last-child {
+    color: var(--j-tinted-text) !important;
+}
+
 cell .final-grade, .panel {
     background: var(--j-contrast-bg) !important; 
     color: var(--j-primary-text) !important;
