@@ -808,7 +808,12 @@ cell .final-grade, .panel {
     color: var(--j-tinted-text) !important;
 }
 
-#units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even) {
+#units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even), .grid-table.gradebook-table .grid-table-row .column:first-child, .grid-table.attendance-report-table .grid-table-row .column:first-child, .gradebook-table-card .task-panel, .gradebook-table.grid-table-card .grid-table-head .grid-table-row .column  {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+div .grid-table-main .grid-table-row:nth-of-type(odd) .column {
     background: var(--j-dark-bg) !important;
     color: var(--j-primary-text) !important;
 }
