@@ -62,6 +62,7 @@ a, .fr-view.fr-element {
 .f-menu {
 	--f-menu-link-bg: var(--j-secondary-bg) !important;
 	transition: 0.5s;
+    position: fixed !important;
 }
 
 .f-menu-link {
