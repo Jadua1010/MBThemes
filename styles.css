@@ -775,6 +775,10 @@ input[type=checkbox] {
 	z-index: 999 !important;
 }
 
+.attendance-bar, cell .final-grade, .panel {
+    background: var(--j-contrast-bg) !important; 
+}
+
 .flash-guidance .flash {
   color: var(--j-tinted-text) !important;
   background: var(--j-dark-bg) !important;
