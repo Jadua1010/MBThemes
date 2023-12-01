@@ -247,15 +247,15 @@ function performThemeActions(theme) {
         case '13':
             var styles = `
 				:root {
-					--j-primary-bg: #f6e272;
-					--j-secondary-bg: #f6b815;
-					--j-contrast-bg: #f69312;
-					--j-dark-bg: #fde6d3;
+					--j-primary-bg: #d7d5ce;
+					--j-secondary-bg: #fcfaef;
+					--j-contrast-bg: #f6f2e0;
+					--j-dark-bg: #fdf2d3;
 					--j-primary-text: #000000;
-					--j-tinted-text: #203d3b;
-					--j-highlight-color: #447270;
-                    --j-hover-color: #6c9493;
-					--j-border-color: #6c9493;
+					--j-tinted-text: #283241;
+					--j-highlight-color: #fadb00;
+                    --j-hover-color: #fadb00;
+					--j-border-color: #c8d0dd;
 				}
 				`
 				var styleSheet = document.createElement("style")
