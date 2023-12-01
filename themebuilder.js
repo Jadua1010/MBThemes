@@ -3,7 +3,7 @@ function performThemeActions(theme) {
     switch (theme) {
         case '0':
             // Custom Mode
-            chrome.storage.sync.get(
+            browser.storage.sync.get(
                 ['primaryBackground', 'secondaryBackground', 'contrastBackground', 'textColor', 'highlightColor'],
                 function(result) {
             	var styles = `

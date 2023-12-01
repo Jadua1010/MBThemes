@@ -8,7 +8,7 @@ function saveColors() {
   var textColor = document.getElementById('textColor').value;
   var highlightColor = document.getElementById('highlightColor').value;
 
-  chrome.storage.sync.set({
+  browser.storage.sync.set({
     'primaryBackground': primaryBackground,
     'secondaryBackground': secondaryBackground,
     'contrastBackground': contrastBackground,
@@ -23,7 +23,7 @@ function saveColors() {
 
 // Load color settings
 function loadColors() {
-  chrome.storage.sync.get(['primaryBackground', 'secondaryBackground', 'contrastBackground', 'textColor', 'highlightColor'], function(result) {
+  browser.storage.sync.get(['primaryBackground', 'secondaryBackground', 'contrastBackground', 'textColor', 'highlightColor'], function(result) {
     document.getElementById('primaryBackground').value = result.primaryBackground || '#15181d';
     document.getElementById('secondaryBackground').value = result.secondaryBackground || '#1d2026';
     document.getElementById('contrastBackground').value = result.contrastBackground || '#333943';
