@@ -11,7 +11,7 @@
 	--j-border-color: #000000;
 }
 
-.theme-dark_blue, .theme-white {
+.theme-dark_blue, .theme-white, .theme-orange, .theme-red, .theme-aubergine {
     --f-primary-color: linear-gradient(65deg,  var(--j-highlight-color) 0,  color-mix(in srgb, var(--j-highlight-color) 80%, white) 100%) !important; 
     --f-primary-color-hover: var(--j-highlight-color) !important;
     --f-primary-color-active: var(--j-highlight-color) !important;
