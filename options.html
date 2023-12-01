@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="options.css">
+  <title>Custom Theme Editor</title>
+</head>
+<body>
+  <h1>Custom Theme Editor</h1>
+
+    <section class="content">
+        <div>
+          <label for="primaryBackground">Primary Background Color:</label>
+          <input type="color" id="primaryBackground" class="colorPicker">
+        </div>
+
+        <div>
+      <label for="secondaryBackground">Secondary Background Color:</label>
+      <input type="color" id="secondaryBackground" class="colorPicker">
+        </div>
+
+        <div>
+      <label for="contrastBackground">Contrast Background Color:</label>
+      <input type="color" id="contrastBackground" class="colorPicker">
+        </div>
+
+        <div>  
+      <label for="textColor">Text Color:</label>
+      <input type="color" id="textColor" class="colorPicker">
+        </div>
+
+        <div>
+      <label for="highlightColor">Highlight Color:</label>
+      <input type="color" id="highlightColor" class="colorPicker">
+        </div>
+
+        <div class="toggle-box">
+      <button class="button" id="saveButton">Save</button>
+        </div>
+        <div class="info" id="saved" style="display: none">
+            Theme has been saved, don't forget to select 'custom' in the menu.
+        </div>
+    </section>
+
+  <script src="options.js"></script>
+</body>
+</html>

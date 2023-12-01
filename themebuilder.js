@@ -3,23 +3,28 @@ function performThemeActions(theme) {
     switch (theme) {
         case '0':
             // Custom Mode
+            chrome.storage.sync.get(
+                ['primaryBackground', 'secondaryBackground', 'contrastBackground', 'textColor', 'highlightColor'],
+                function(result) {
             	var styles = `
 				:root {
-					--j-primary-bg: #15181d;
-					--j-secondary-bg: #1d2026;
-					--j-contrast-bg: #333943;
-					--j-dark-bg: #121317;
-					--j-primary-text: #ffffff;
-					--j-tinted-text: #eff8ff;
+					--j-primary-bg: ${result.primaryBackground || '#15181d'};
+                    --j-secondary-bg: ${result.secondaryBackground || '#1d2026'};
+                    --j-contrast-bg: ${result.contrastBackground || '#333943'};
+					--j-dark-bg: ${result.primaryBackground || '#15181d'};
+					--j-primary-text: ${result.textColor || '#eff8ff'};
+					--j-tinted-text: ${result.textColor || '#eff8ff'};
 					--j-grey-text: #8296c5;
-					--j-highlight-color: #3582fd;
-					--j-hover-color: #2f2f39;
-					--j-border-color: #393f4a;
+					--j-highlight-color: ${result.highlightColor || '#3582fd'};
+					--j-hover-color: ${result.highlightColor || '#3582fd'};
+					--j-border-color: ${result.contrastBackground || '#333943'};
 				}
-				`
+				`;
 				var styleSheet = document.createElement("style")
 				styleSheet.innerText = styles
 				document.head.appendChild(styleSheet)
+                }
+            );
             break;
         case '1':
             // Dark Mode
@@ -285,6 +290,7 @@ chrome.storage.sync.get(['theme'], function(result) {
     // Check if a theme is saved and perform actions accordingly
     if (savedTheme) {
         performThemeActions(savedTheme);
+        
     } else {
         // Handle the case when no theme is saved (you can add default actions here)
         performThemeActions(savedTheme);

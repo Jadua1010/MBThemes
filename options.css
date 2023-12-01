@@ -1,0 +1,209 @@
+body{
+    background:#15181d;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+	font-family: open sans,-apple-system,blinkmacsystemfont,segoe ui,roboto,helvetica neue,arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+:root {
+  --gray: #1d2026;
+  --darkgray: #4b5262;
+}
+
+h1{
+    font-size:2em;
+    margin:0.67em 0;
+	color: #d1d6de;
+}
+
+label {
+	color: #d1d6de;
+}
+
+.site-header{
+    padding:9px 0;
+	color:#8A94A7;
+}
+
+.info {
+	padding: 5px;
+	background-color: #39424f;
+	border-radius: 10px;
+	margin-top: -15px;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+	
+
+.content {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #1d2026;
+	width: 360px;
+	color: #d1d6de;
+}
+
+.centred {
+	margin: auto;
+	width: 90%;
+}
+
+.switch input
+{
+  display: none;
+}
+
+
+/* Add this CSS for the toggle box */
+.toggle-box {
+    display: flex;
+    align-items: center;
+    background-color: #39424f;
+    padding: 10px;
+    border-radius: 10px;
+    color: #d1d6de;
+	font-size:1.4em;
+	margin-top: 10px;
+	justify-content: space-around;
+}
+
+.switch {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 0 2px #1570ef, 0 0 4px #1570ef;
+    cursor: pointer;
+    border: 4px solid transparent;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #1570ef;
+    border-radius: 30px;
+    transform: translateX(-30px);
+    transition: 0.2s;
+}
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+    background-color: limeGreen;
+}
+
+input:checked + .slider {
+    box-shadow: 0 0 0 2px limeGreen, 0 0 8px limeGreen;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 2em;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  height: 3em;
+  border-radius: 1em;
+  overflow: hidden;
+  max-width: 15em;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: relative;
+  padding: 1em;
+  background-color: #4b5262;
+  transition: .25s all ease;
+  pointer-events: inherit;
+}
+/* Transition */
+.select:hover::after {
+  color: limeGreen;
+}
+
+select {
+    font-family: inherit;
+    font-size: 0.8em;
+}
+
+<!-- HTML !-->
+<button class="button-4" role="button">Button 4</button>
+
+/* CSS */
+.button-4 {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+
+.button {
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #1c89ff;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+  }
+  
+}
