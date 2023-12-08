@@ -41,6 +41,10 @@ a, .fr-view.fr-element {
 	color: var(--j-tinted-text) !important;
 }
 
+.btn, .pill, .form-actions input[type="submit"], .form-actions button[type="submit"] {
+    background: var(--j-highlight-color) !important;
+}
+
 .f-menu-nav, .navbar-default, .navbar .container-fluid, .f-menu-narrow .f-menu-submenu{
     background: var(--j-secondary-bg) !important;
 	border: solid 0px var(--j-border-color) !important;
