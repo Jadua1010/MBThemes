@@ -821,3 +821,7 @@ div .grid-table-main .grid-table-row:nth-of-type(odd) .column {
     background: var(--j-dark-bg) !important;
     color: var(--j-primary-text) !important;
 }
+
+.fr-view.fr-element table td {
+    background: var(--j-dark-bg) !important;
+}
