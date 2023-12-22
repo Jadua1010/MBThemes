@@ -829,3 +829,7 @@ div .grid-table-main .grid-table-row:nth-of-type(odd) .column {
 .fr-view.fr-element p {
     background: #fff0 !important;
 }
+
+#dnd-upload {
+    background: var(--j-dark-bg) !important;
+}
