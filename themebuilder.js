@@ -1,6 +1,31 @@
 // Function to perform actions based on the selected theme
 function performThemeActions(theme) {
     switch (theme) {
+        case '0':
+            // Custom Mode
+            browser.storage.sync.get(
+                ['primaryBackground', 'secondaryBackground', 'contrastBackground', 'textColor', 'highlightColor'],
+                function(result) {
+            	var styles = `
+				:root {
+					--j-primary-bg: ${result.primaryBackground || '#15181d'};
+                    --j-secondary-bg: ${result.secondaryBackground || '#1d2026'};
+                    --j-contrast-bg: ${result.contrastBackground || '#333943'};
+					--j-dark-bg: ${result.primaryBackground || '#15181d'};
+					--j-primary-text: ${result.textColor || '#eff8ff'};
+					--j-tinted-text: ${result.textColor || '#eff8ff'};
+					--j-grey-text: #8296c5;
+					--j-highlight-color: ${result.highlightColor || '#3582fd'};
+					--j-hover-color: ${result.highlightColor || '#3582fd'};
+					--j-border-color: ${result.contrastBackground || '#333943'};
+				}
+				`;
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+                }
+            );
+            break;
         case '1':
             // Dark Mode
             	var styles = `
@@ -48,8 +73,8 @@ function performThemeActions(theme) {
 					--j-dark-bg: #f2f2f2;
 					--j-primary-text: #000000;
 					--j-tinted-text: #283241;
-					--j-highlight-color: #a41ce0;
-					--j-hover-color: #a41ce0;
+					--j-highlight-color: #7f56d9;
+					--j-hover-color: #6941c6;
 					--j-border-color: #c8d0dd;
 				}
 				`
@@ -60,14 +85,14 @@ function performThemeActions(theme) {
 		case '4':
             var styles = `
 				:root {
-					--j-primary-bg: #160e16;
-					--j-secondary-bg: #211421;
-					--j-contrast-bg: #462b47;
+					--j-primary-bg: #0c0717;
+					--j-secondary-bg: #160d2b;
+					--j-contrast-bg: #321d61;
 					--j-dark-bg: #180f18;
 					--j-primary-text: #ffffff;
 					--j-tinted-text: #f7e8ff;
-					--j-highlight-color: #b42fd0;
-					--j-hover-color: #b42fd0;
+					--j-highlight-color: #7f56d9;
+					--j-hover-color: #6941c6;
 					--j-border-color: #393f4a;
 				}
 				`
@@ -96,9 +121,9 @@ function performThemeActions(theme) {
 		case '6':
             	var styles = `
 				:root {
-					--j-primary-bg: url("https://j.gifs.com/vMO2wL.gif");
-					--j-secondary-bg: url("https://j.gifs.com/vMO2wL.gif");
-					--j-contrast-bg: url("https://j.gifs.com/vMO2wL.gif");
+					--j-primary-bg: url("https://i.gifer.com/7HHu.gif");
+					--j-secondary-bg: url("https://i.gifer.com/7HHu.gif");
+					--j-contrast-bg: url("https://i.gifer.com/7HHu.gif");
 					--j-dark-bg: #121317;
 					--j-primary-text: #ffffff;
 					--j-tinted-text: #eff8ff;
@@ -183,6 +208,60 @@ function performThemeActions(theme) {
 				styleSheet.innerText = styles
 				document.head.appendChild(styleSheet)
             break;
+        case '11':
+            var styles = `
+				:root {
+                    --j-primary-bg: #0a0101;
+                    --j-secondary-bg: #220104;
+                    --j-contrast-bg: #40070e;
+                    --j-dark-bg: #180f18;
+                    --j-primary-text: #ffffff;
+                    --j-tinted-text: #f7e8ff;
+                    --j-highlight-color: #ea061f;
+                    --j-hover-color: #ea061f;
+                    --j-border-color: #393f4a;
+                }
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
+        case '12':
+            var styles = `
+				:root {
+					--j-primary-bg: #f3f3f3;
+					--j-secondary-bg: #ffffff;
+					--j-contrast-bg: #ffffff;
+					--j-dark-bg: #fde6d3;
+					--j-primary-text: #000000;
+					--j-tinted-text: #283241;
+					--j-highlight-color: #ea061f;
+                    --j-hover-color: #ea061f;
+					--j-border-color: #c8d0dd;
+				}
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
+        case '13':
+            var styles = `
+				:root {
+					--j-primary-bg: #e8e7e3;
+                    --j-secondary-bg: #fcfaef;
+                    --j-contrast-bg: #f6f2e0;
+                    --j-dark-bg: #fdf2d3;
+                    --j-primary-text: #000000;
+                    --j-tinted-text: #283241;
+                    --j-highlight-color: #f5d700;
+                    --j-hover-color: #f5d700;
+                    --j-border-color: #c8d0dd;
+				}
+				`
+				var styleSheet = document.createElement("style")
+				styleSheet.innerText = styles
+				document.head.appendChild(styleSheet)
+            break;
         default:
             var styles = `
 				:root {
@@ -211,6 +290,7 @@ browser.storage.sync.get(['theme'], function(result) {
     // Check if a theme is saved and perform actions accordingly
     if (savedTheme) {
         performThemeActions(savedTheme);
+        
     } else {
         // Handle the case when no theme is saved (you can add default actions here)
         performThemeActions(savedTheme);

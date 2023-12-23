@@ -1,4 +1,4 @@
-.theme-dark_blue, .theme-white {
+.theme-dark_blue, .theme-white, .theme-orange, .theme-red, .theme-aubergine {
     --f-primary-color: linear-gradient(65deg,  var(--j-highlight-color) 0,  color-mix(in srgb, var(--j-highlight-color) 80%, white) 100%) !important; 
     --f-primary-color-hover: var(--j-highlight-color) !important;
     --f-primary-color-active: var(--j-highlight-color) !important;
@@ -26,6 +26,10 @@ a, .fr-view.fr-element {
 
 .btn-main:hover, .btn-primary:hover {
 	color: var(--j-tinted-text) !important;
+}
+
+.btn, .pill, .form-actions input[type="submit"], .form-actions button[type="submit"] {
+    background: var(--j-highlight-color) !important;
 }
 
 .f-menu-nav, .navbar-default, .navbar .container-fluid, .f-menu-narrow .f-menu-submenu{
@@ -58,6 +62,8 @@ a, .fr-view.fr-element {
 .f-menu {
 	--f-menu-link-bg: var(--j-secondary-bg) !important;
 	transition: 0.5s;
+    position: fixed !important;
+    top: 0px;
 }
 
 .f-menu-link {
@@ -771,6 +777,10 @@ input[type=checkbox] {
 	z-index: 999 !important;
 }
 
+.attendance-bar, cell .final-grade, .panel {
+    background: var(--j-contrast-bg) !important; 
+}
+
 .flash-guidance .flash {
   color: var(--j-tinted-text) !important;
   background: var(--j-dark-bg) !important;
@@ -794,7 +804,45 @@ cell .final-grade, .panel {
     background: var(--j-dark-bg) !important;
     color: var(--j-tinted-text) !important;
 }
-#units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even) {
+
+.attendance-bar {
+    background: var(--j-contrast-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar span:not(.active) {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-tinted-text) !important;
+}
+
+.attendance-bar {
+    background: var(--j-contrast-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+.attendance-bar span:not(.active) {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-tinted-text) !important;
+}
+
+#units-timeline table td.timeline-unit-name, #units-timeline table td.progress-line .units-timelines:nth-child(even), .grid-table.gradebook-table .grid-table-row .column:first-child, .grid-table.attendance-report-table .grid-table-row .column:first-child, .gradebook-table-card .task-panel, .gradebook-table.grid-table-card .grid-table-head .grid-table-row .column  {
     background: var(--j-dark-bg) !important;
     color: var(--j-primary-text) !important;
+}
+
+div .grid-table-main .grid-table-row:nth-of-type(odd) .column {
+    background: var(--j-dark-bg) !important;
+    color: var(--j-primary-text) !important;
+}
+
+.fr-view.fr-element table td {
+    background: var(--j-dark-bg) !important;
+}
+
+.fr-view.fr-element p {
+    background: #fff0 !important;
+}
+
+#dnd-upload {
+    background: var(--j-dark-bg) !important;
 }
